@@ -1,0 +1,67 @@
+<html>
+<head>
+<title> CLothing Website </title>
+<link rel= "stylesheet" type= "text/css" href= "css/clothing.css">
+<script language="javascript" type="text/javascript">
+
+function setDescription(block)
+{
+   document.getElementById('id1').style.display="none";
+   document.getElementById('id2').style.display="none";
+   document.getElementById('id3').style.display="none";
+   document.getElementById(block).style.display="block";
+}
+
+function resetDescription(block)
+{
+   document.getElementById('id1').style.display="none";
+   document.getElementById('id2').style.display="none";
+   document.getElementById('id3').style.display="none";
+   document.getElementById('id1').style.display="block";
+}
+
+</script>
+</head>
+<body class="abc2" bgcolor="#FFFF8A">
+  <table width= "100%" border= "1">
+    <tr> <td height="95" colspan= "2" bgcolor="#E6E6E6">
+    <div align="left" style="background-image:url(images/clothing_header.jpg); height:174px; width:1041px;"></div>
+         </td> 
+    </tr>
+    <tr style="border-left-color:#FFF; border-bottom-width:thick"> <td width= "19%" valign= "top">
+  <div style="display:block;"><h3 style="background-color:#8383E7; color:#FFF; font-size:23px;">Menu</h3>
+  <p style="padding-left:5px;">
+  <a href= "index.html" class= "abc"> Home </a><br/>
+  <a href= "menmenu.html" class= "abc">Men's Clothing. </a><br/>
+  <a href= "womenmenu.html" class= "abc"> Women's Clothing. </a><br/>
+  <a href= "aboutus.html" class= "abc"> About Us.</a></p>
+  </div>
+  </td>
+        <td width="81%" class= "abc3">         
+     <div style="display:block; height:125;" id="id1"> 
+      <h3 align="left" style="background-color:#8383E7; padding: 3px 15px 3px; color:#FFF; font-size:18px;">Clothing Overview</h3>
+      <p style="padding-left:10px; padding-right:5px;"> Our online store is your one-stop shop for all the best brands in gothic clothing and accessories, famous for quality, unique designs and outstanding service. Only the best European labels in gothic clothing make it into our selection, and only their best clothes make it into our shop. In addition to this, our gothic store offers fast and friendly service, and quick shipping. Verify for yourself by reading our testimonials section, and see what other customers say about us.</p>
+     </div>
+
+     <div style="display:none; height:125;" id="id2"> 
+      <h3 align="left" style="background-color:#8383E7; padding: 3px 15px 3px; color:#FFF; font-size:18px;">Men's Clothing</h3>
+      <p>Men's Clothing includes varaties like jeans, cotton, suits, T-Shirt and trousers.</p>
+     </div>
+
+     <div style="display:none; height:125;" id="id3"> 
+      <h3 align="left" style="background-color:#8383E7; padding: 3px 15px 3px; color:#FFF; font-size:18px;">Women's Clothing</h3>
+      <p>Women's Clothing includes varaties like jeans, dresses, T-Shirt, Skirts and jackets.</p>
+     </div>
+
+          <table width="794" height="266" border="0" align="center" style="padding-top:5px;">
+            <tr>
+              <td width="400" height="262"><a href="menmenu.html"><img src="images/mens-clothing.jpg" width="381" height="256" onMouseOver="setDescription('id2');" onMouseOut="resetDescription('id1');"></a></td>
+              <td width="384"><a href="womenmenu.html"><img src="images/women-clothing.jpg" width="380" height="256" onMouseOver="setDescription('id3');" onMouseOut="resetDescription('id1');"></a></td>
+            </tr>
+          </table>
+<p>&nbsp;</p>
+               <br/></td>
+        </tr>
+  </table>
+</body>
+</html>

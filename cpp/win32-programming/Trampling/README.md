@@ -1,0 +1,1 @@
+This is a tried out example in order for the monitoring function calls assignment. We use inline assembly code and modify the remote processes dll function call by overwriting a jmp instruction at runtime in order to track the function calls without interrupting the normal function of the remote process.
